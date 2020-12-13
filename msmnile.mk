@@ -232,11 +232,13 @@ PRODUCT_PACKAGES += \
     init.qcom.post_boot.sh \
     init.qcom.rc \
     init.qcom.sh \
-    init.qcom.usb.rc \
     init.raphael.rc \
     init.safailnet.rc \
     init.target.rc \
     ueventd.qcom.rc
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/init.raphael.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.raphael.usb.rc
 
 # IPA
 PRODUCT_PACKAGES += \
