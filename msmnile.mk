@@ -380,7 +380,8 @@ TARGET_COMMON_QTI_COMPONENTS += \
     bt \
     display \
     perf \
-    wfd
+    wfd \
+    audio 
 
 # RCS
 PRODUCT_PACKAGES += \
