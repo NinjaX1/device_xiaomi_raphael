@@ -162,10 +162,6 @@ TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 # Sensors
 USE_SENSOR_MULTI_HAL := true
 
-# Sepolicy
-SELINUX_IGNORE_NEVERALLOWS := true
-include device/qcom/sepolicy_vndr/SEPolicy.mk
-
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/public
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
